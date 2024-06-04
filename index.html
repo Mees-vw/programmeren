@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburger Maker Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="ingredients">
+            <div class="ingredient" data-name="lettuce" data-price="0.50">
+                <img src="images/lettuce.png" alt="Lettuce">
+                <span>Lettuce (€0.50)</span>
+            </div>
+            <div class="ingredient" data-name="tomato" data-price="0.30">
+                <img src="images/tomato.png" alt="Tomato">
+                <span>Tomato (€0.30)</span>
+            </div>
+            <div class="ingredient" data-name="cheese" data-price="0.80">
+                <img src="images/cheese.png" alt="Cheese">
+                <span>Cheese (€0.80)</span>
+            </div>
+            <div class="ingredient" data-name="bacon" data-price="1.00">
+                <img src="images/bacon.png" alt="Bacon">
+                <span>Bacon (€1.00)</span>
+            </div>
+            <div class="ingredient" data-name="beef" data-price="2.00">
+                <img src="images/beef.png" alt="Beef">
+                <span>Beef (€2.00)</span>
+            </div>
+        </div>
+        <div class="burger">
+            <div class="bun-top">
+                <img src="images/bun_top.png" alt="Bun Top">
+            </div>
+            <div class="stack"></div>
+            <div class="bun-bottom">
+                <img src="images/bun_bottom.png" alt="Bun Bottom">
+            </div>
+        </div>
+        <img id="bell" src="images/bell.png">
+    </div>
+    <div id="price-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Total Price: $<span id="total-price">0.00</span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
